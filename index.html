@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
 
-    //FONT
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,10 @@
       rel="stylesheet"
     />
 
-    //CSS
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/default.css" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -31,6 +34,7 @@
         <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
         <h1>Arlan & Putri</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam</p>
+        <div id="clock" class="simply-countdown"></div>
         <a href="#undangan" class="btn btn-lg">Lihat Undangan</a>
       </main>
     </section>
@@ -39,5 +43,19 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <!-- symplyCountdown js src-->
+    <script src="countdown/simplyCountdown.umd.js"></script>
+    <script>
+      simplyCountdown("#clock", {
+        year: 2025,
+        month: 10,
+        day: 18,
+        hours: 23,
+        minutes: 59,
+        seconds: 59,
+      });
+    </script>
+    <!-- end of symplyCountdown -->
   </body>
 </html>
