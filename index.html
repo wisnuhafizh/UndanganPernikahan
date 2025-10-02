@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
 
-    <!-- simplyCountdown -->
+    <!-- simplyCountdown via Browser(UMD) -->
     <link rel="stylesheet" href="countdown/default.css" />
 
     <!-- CSS -->
@@ -54,6 +54,26 @@
         hours: 23,
         minutes: 59,
         seconds: 59,
+        //words
+        words: {
+          days: {
+            // Function to handle pluralization
+            lambda: (root, count) => (count > 1 ? root : root),
+            root: "hari", // Base word for days
+          },
+          hours: {
+            lambda: (root, count) => (count > 1 ? root : root),
+            root: "jam",
+          },
+          minutes: {
+            lambda: (root, count) => (count > 1 ? root : root),
+            root: "menit",
+          },
+          seconds: {
+            lambda: (root, count) => (count > 1 ? root : root),
+            root: "detik",
+          },
+        },
       });
     </script>
     <!-- end of symplyCountdown -->
